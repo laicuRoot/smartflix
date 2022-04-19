@@ -1,0 +1,74 @@
+Started GET "/" for ::1 at 2022-04-19 16:42:04 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shows/index.html.erb within layouts/application
+  Rendered shows/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 464)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2022-04-19 16:42:12 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shows/index.html.erb within layouts/application
+  Rendered shows/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 38)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/jose.espinosa/Desktop/smartflix/smartflix/public/packs
+[Webpacker] Hash: 2034dd941d5476d8645c
+Version: webpack 4.46.0
+Time: 3605ms
+Built at: 04/19/2022 16:42:13
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3dd0dc24d9c39bc09227.js    125 KiB  application  [emitted] [immutable]  application
+js/application-3dd0dc24d9c39bc09227.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3dd0dc24d9c39bc09227.js js/application-3dd0dc24d9c39bc09227.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 9453.1ms | Allocations: 21548)
+Completed 200 OK in 9540ms (Views: 9487.4ms | ActiveRecord: 0.0ms | Allocations: 26464)
+
+
+[Webpacker] Compiled all packs in /Users/jose.espinosa/Desktop/smartflix/smartflix/public/packs
+[Webpacker] Hash: 2034dd941d5476d8645c
+Version: webpack 4.46.0
+Time: 933ms
+Built at: 04/19/2022 16:42:17
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-3dd0dc24d9c39bc09227.js    125 KiB  application  [emitted] [immutable]  application
+js/application-3dd0dc24d9c39bc09227.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-3dd0dc24d9c39bc09227.js js/application-3dd0dc24d9c39bc09227.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 4852.7ms | Allocations: 9038)
+Completed 200 OK in 4855ms (Views: 4853.8ms | ActiveRecord: 0.0ms | Allocations: 9528)
+
+
+Started GET "/" for ::1 at 2022-04-19 17:03:41 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shows/index.html.erb within layouts/application
+  Rendered shows/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 355)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | Allocations: 6580)
+Completed 200 OK in 68ms (Views: 53.1ms | ActiveRecord: 0.0ms | Allocations: 10230)
+
+
+Started GET "/" for ::1 at 2022-04-19 17:03:44 +0100
+Processing by ShowsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shows/index.html.erb within layouts/application
+  Rendered shows/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 3577)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 4135)
+
+

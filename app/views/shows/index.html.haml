@@ -1,6 +1,6 @@
 %h1 Smartflix
 - @data_csv.each do |data|
-    %h3
+    %h3{:class => "title"}
         = data['title']
         = data['release_year']
     %p 

@@ -4,9 +4,6 @@ require 'rails_helper'
 
 RSpec.describe "Index page", type: :feature do
 
-    let(:data) { @data_csv }
-
-
     it "includes the Smartflix title" do
         visit "/"
         expect(page).to have_text("Smartflix")
@@ -14,8 +11,7 @@ RSpec.describe "Index page", type: :feature do
 
     it "includes all the shows titles" do
         visit "/" 
-        expect(page).to have_text(title)
+        expect(page).to have_text('Mismatched 2020')
     end
-
     
 end

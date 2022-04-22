@@ -4,14 +4,21 @@ require 'rails_helper'
 
 RSpec.describe "Index page", type: :feature do
 
-    it "includes the Smartflix title" do
+
+    it "includes the Smartflix header" do
         visit "/"
         expect(page).to have_text("Smartflix")
     end
 
-    it "includes all the shows titles" do
+   context "when titles are given" do
+
+    it "includes the shows titles" do 
+      titles.first(5).each do |title|
         visit "/" 
-        expect(page).to have_text('Mismatched 2020')
+        expect(page).to have_text(title)
+      end
     end
-    
+
+   end
+
 end

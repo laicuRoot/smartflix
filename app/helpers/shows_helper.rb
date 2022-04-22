@@ -1,6 +1,9 @@
+# frozen_string_literal: true
+
 require 'csv'
 
 module ShowsHelper
+
 	def data_csv
 		items = []
 		CSV.foreach('./db/netflix_titles.csv', headers: true) do |row|
@@ -8,4 +11,9 @@ module ShowsHelper
 		end
 		items
 	end
+
+	def titles
+		data_csv.map { |show| show['title'] }
+	end
+
 end

@@ -4,7 +4,7 @@ class ShowsController < ApplicationController
   include ShowsHelper
 
   def index
-    @data_csv = data_csv.first(20)
+    @data_csv = Show.all.first(50)
   end
 
 end

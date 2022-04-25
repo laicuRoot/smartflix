@@ -12,8 +12,4 @@ module ShowsHelper
 		items
 	end
 
-	def titles
-		data_csv.map { |show| show['title'] }
-	end
-
 end

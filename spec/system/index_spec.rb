@@ -14,8 +14,8 @@ RSpec.describe "Index page", type: :feature do
 
     it "includes the shows titles" do 
       visit "/" 
-      titles.first(5).each do |title|
-        expect(page).to have_text(title)
+      data_csv.first(5).each do |show|
+        expect(page).to have_text(show['title'])
       end
     end
 

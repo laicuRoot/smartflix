@@ -13,12 +13,13 @@ RSpec.describe "Index page", type: :feature do
    context "when titles are given" do
 
     it "includes the shows titles" do 
-      titles.first(5).each do |title|
-        visit "/" 
-        expect(page).to have_text(title)
+      visit "/" 
+      
+      csv_data.first(5).each do |show|
+        expect(page).to have_text(show['title'])
       end
+      
     end
-
    end
-
+  
 end

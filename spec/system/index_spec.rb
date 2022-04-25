@@ -13,9 +13,9 @@ RSpec.describe "Index page", type: :feature do
    context "when titles are given" do
 
     it "includes the shows titles" do 
+      visit "/" 
       Show.all.first(5).each do |show|
-        title = show.first.title
-        visit "/" 
+        title = show.title
         expect(page).to have_text(title)
       end
     end

@@ -20,5 +20,4 @@ RSpec.describe "Index page", type: :feature do
     end
 
    end
-
 end

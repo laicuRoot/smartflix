@@ -4,9 +4,11 @@ require 'csv'
 
 module ShowsHelper
 
-	def data_csv
+	FILE_PATH = './db/netflix_titles.csv'
+
+	def csv_data
 		items = []
-		CSV.foreach('./db/netflix_titles.csv', headers: true) do |row|
+		CSV.foreach(FILE_PATH, headers: true) do |row|
 			items << row.to_h
 		end
 		items

@@ -29,14 +29,14 @@ module Tasks
 
       attr_reader :file_path
 
-      def create_records(shows)
+      def import_data
+        shows = []
         data = parse_shows_csv(shows)
         rename_key(data)
-        Show.import(data) 
+        Show.import(data)
       end
-  
+      
       def parse_shows_csv(shows)
-        binding.pry
         CSV.foreach(file_path, headers: true) do |row|
             data_hash = row.to_h
             shows << data_hash
@@ -46,13 +46,6 @@ module Tasks
   
       def rename_key(data)
         data.each { |show| show["show_type"] = show.delete "type" }
-      end
-  
-      def import_data
-        shows = []
-        data = parse_shows_csv(shows)
-        rename_key(data)
-        Show.import(data)
       end
 
     end

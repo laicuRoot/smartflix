@@ -4,13 +4,13 @@
         %h1 Smartflix
         %h3 Find out more about your favourite movies
     %div{:class => ["row","row-cols-3","g-3, justify-content-center", "gx-0"]}
-        - @data_csv.each do |data|
+        - @shows.each do |show|
             .card{:style => "width: 18rem;", :class => "m-2"}
                 %img.card-img-top{:alt => "placeholder", :src => "https://via.placeholder.com/150"}/
                 .card-body
                     %h5.card-title 
-                        = data['title']
-                        = data['release_year'] 
+                        = show['title']
+                        = show['release_year'] 
                     %p.card-text 
-                        = data['description']
+                        = show['description']
 

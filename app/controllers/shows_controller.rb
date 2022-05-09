@@ -4,7 +4,7 @@ class ShowsController < ApplicationController
   include ShowsHelper
   
   def index
-    @data_csv = csv_data
+    @shows = parsing_data.first(50)
   end
 
 end

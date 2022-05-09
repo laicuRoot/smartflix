@@ -9,9 +9,9 @@
                 %img.card-img-top{:alt => "placeholder", :src => "https://via.placeholder.com/150"}/
                 .card-body
                     %h5.card-title 
-                        = show['title']
+                        = show.title
                         = surround '(',')' do 
-                            = show['release_year'] 
+                            = show.release_year
                     %p.card-text 
-                        = show['description']
+                        = show.description
 

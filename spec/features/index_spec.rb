@@ -10,12 +10,11 @@ RSpec.describe "Index page", type: :feature do
     end
 
    context "when titles are given" do
-    it "includes the shows titles" do 
+    it "includes the first 50 shows titles" do 
       visit "/" 
       
-      csv_data.first(5).each do |show|
-        expect(page).to have_text(show['title'])
-      end
+      expect(page).to have_text("Dick Johnson Is Dead")
+      expect(page).to_not have_text("Dharmakshetra")
     end
    end
   

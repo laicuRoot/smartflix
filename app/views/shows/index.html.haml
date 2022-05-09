@@ -10,7 +10,8 @@
                 .card-body
                     %h5.card-title 
                         = show['title']
-                        = show['release_year'] 
+                        = surround '(',')' do 
+                            = show['release_year'] 
                     %p.card-text 
                         = show['description']
 

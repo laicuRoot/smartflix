@@ -4,7 +4,7 @@ class ShowsController < ApplicationController
   include ShowsHelper
 
   def index
-    @data = Show.all.first(50)
+    @shows = parsing_data.first(50)
   end
 
 end

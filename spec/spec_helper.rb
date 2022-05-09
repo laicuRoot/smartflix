@@ -15,7 +15,6 @@
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'capybara/rspec'
 require_relative '../app/helpers/shows_helper'
-# /Users/jose.espinosa/Desktop/smartflix/app/helpers/shows_helper.rb
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
 FILE_PATH = '/Users/jose.espinosa/Desktop/smartflix/lib/assets/netflix_titles.csv'.freeze
 
 puts "Seeding DB"

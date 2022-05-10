@@ -2,7 +2,6 @@
 
 require 'csv'
 require_relative '../../app/models/show.rb'
-require 'pry'
 
 
 module Tasks

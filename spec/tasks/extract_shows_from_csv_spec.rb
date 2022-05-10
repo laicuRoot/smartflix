@@ -2,7 +2,6 @@
 
 require 'rails_helper'
 require 'rake'
-require 'pry'
 
 Rails.application.load_tasks
 

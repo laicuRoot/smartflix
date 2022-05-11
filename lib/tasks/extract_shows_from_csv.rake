@@ -10,7 +10,7 @@ module Tasks
       include Rake::DSL
 
       def initialize
-        namespace :extract_shows_from_csv_spec do
+        namespace :extract_shows_from_csv do
           desc "Seed the DB with CSV data"
           task :run, %i[file_path] => :environment do |_task, args|
             @file_path = args[:file_path]

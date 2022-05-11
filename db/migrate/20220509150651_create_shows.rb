@@ -1,9 +1,9 @@
 class CreateShows < ActiveRecord::Migration[7.0]
   def change
     create_table :shows do |t|
-      t.integer :show_type, default: 0
-      t.string :show_id
-      t.string :title
+      t.integer :show_type, default: 0, null: false
+      t.string :show_id, null: false
+      t.string :title, null: false
       t.string :director
       t.text :cast
       t.string :country

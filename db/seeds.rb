@@ -9,5 +9,5 @@
 FILE_PATH = '/Users/jose.espinosa/Desktop/smartflix/lib/assets/netflix_titles.csv'.freeze
 
 puts "Seeding DB"
-Rake::Task['extract_shows_from_csv_spec:run'].invoke(FILE_PATH)
+Rake::Task['extract_shows_from_csv:run'].invoke(FILE_PATH)
 puts "Seeding completed"

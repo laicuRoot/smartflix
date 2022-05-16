@@ -3,26 +3,20 @@
 require 'rails_helper'
 
 RSpec.describe Show, type: :model do
-  let(:show) { create(:show) }
-  let(:title) { show.title }
-  let(:show_type) { show.show_type }
-
-  it "is a valid with the presence of show_type, show_id and title" do
-    expect(show).to be_valid
-  end
-
-  context "when title is not present" do
-    let(:title) { nil }
-    
-    it "is invalid" do
-      expect(subject).to be_invalid
+  
+  subject do
+    described_class.new(title: "Test",
+                        show_type: "TV Show")
     end
-  end
+
+  it { should validate_presence_of(:title) }
+  it { should validate_presence_of(:show_id) }
+  it { should validate_presence_of(:show_type) }
 
   context "when show_type is not 'Movie' or 'TV Show' " do
-    let(:show_type) { 'Short' }
 
     it "is invalid" do
+      subject.show_type = nil
       expect(subject).to be_invalid
     end 
   end

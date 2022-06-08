@@ -1,0 +1,11 @@
+Dockerfile*
+.dockerignore
+docker-compose.yml
+.bundle/
+log/
+tmp/
+.git/
+node_modules
+clients/**/node_modules
+clients/**/tmp
+/config/master.key
